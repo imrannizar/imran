@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayuan Kolej</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>UNIT PENGURUSAN KOLEJ & NR</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Laman Utama</a></li>
+                <li><a href="form.html" class="active">Borang Rayuan</a></li>
+                <li><a href="profile.html">Maklumat Diri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="form-content">
+        <section class="form-section">
+            <h2>Borang Rayuan Kolej</h2>
+            <form id="appealForm">
+                <p>*Sila baca borang ini dengan teliti sebelum mengisi borang</p>
+                <p>*Borang yang tidak lengkap diisi tidak akan diproses</p>
+                
+                <fieldset>
+                    <legend>DIISI OLEH PEMOHON</legend>
+                    
+                    <label for="applicationType">RAYUAN:</label>
+                    <select id="applicationType" name="applicationType" required>
+                        <option value="">Pilih Tahap Pengajian</option>
+                        <option value="Pra Diploma">PRA DIPLOMA</option>
+                        <option value="Diploma">DIPLOMA</option>
+                        <option value="Ijazah">IJAZAH</option>
+                        <option value="Mengulang Pengajian">MENGULANG PENGAJIAN</option>
+                    </select>
+
+                    <label for="fullName">NAMA:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="studentId">NO. PELAJAR:</label>
+                    <input type="text" id="studentId" name="studentId" required>
+
+                    <label for="icNo">NO K/P:</label>
+                    <input type="text" id="icNo" name="icNo" placeholder="cth., 901231145678 (12 digits)" required>
+
+                    <label for="course">KURSUS:</label>
+                    <input type="text" id="course" name="course" required>
+
+                    <label for="semester">SEMESTER:</label>
+                    <input type="number" id="semester" name="semester" min="1" max="8" required>
+
+                    <label for="gender">JANTINA:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Lelaki">Lelaki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+
+                    <label for="mobileNo">NO (H/P):</label>
+                    <input type="tel" id="mobileNo" name="mobileNo" placeholder="cth., 0123456789 (10 ke 11 digits)" required>
+
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" placeholder="cth., yourname@example.com" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>BUTIRAN BAPA/PENJAGA</legend>
+                    <label for="fatherName">NAMA BAPA/PENJAGA:</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>ALAMAT PERHUBUNGAN</legend>
+                    <label for="address">ALAMAT:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                    
+                    <label for="contactPhone">NO.TELEFON (PENJAGA):</label>
+                    <input type="tel" id="contactPhone" name="contactPhone" placeholder="cth., 0123456789 (10 ke 11 digits)" required>
+                </fieldset>
+                
+                <p>*Saya mengaku maklumat yang saya berikan adalah benar dan pihak Unit Pengurusan Kolej dan NR berhak menarik balik kemudahan kolej jika mendapati maklumat kolej yang diberikan adalah palsu.</p>
+                <p>*Saya dengan ini bersetuju untuk menerima lokasi penempatan seperti yang telah ditetapkan tanpa sebarang pertikaian.</p>
+
+                <button type="submit">Hantar Permohonan</button>
+            </form>
+            <div id="form-result">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Imran Nizar. Universiti Teknologi MARA.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
